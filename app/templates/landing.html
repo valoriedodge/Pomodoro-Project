@@ -1,5 +1,7 @@
-<h1 class="hero-title">{{landing.heroTitle}}</h1>
-<!-- <div>{{landing.timer}}</div> -->
-<!-- <button ng-click="landing.startStudy()">Start</button>
-<button ng-click="landing.stopStudy()">Reset</button>
-<button ng-click="landing.resetStudy()">Take A Break</button> -->
+<div class="main">
+<p>{{landing.heroTitle}}</p>
+<p class="time">{{ currentTime | timecode}}</p>
+<button class="button" ng-click="landing.timer.startStudy()" ng-show="landing.timer.stopped">Start</button>
+<button class="button" ng-click="landing.timer.resetStudy()" ng-show="landing.timer.timing">Reset</button>
+<button class="button" ng-click="landing.timer.stopStudy()" ng-hide="true">Take A Break</button>
+</div>

@@ -1,9 +1,10 @@
 (function() {
-    function LandingCtrl() {
+    function LandingCtrl($scope, Timer) {
         this.heroTitle = "The Pomodoro Project";
+        this.timer = Timer;
     }
 
     angular
         .module('pomodoroProject')
-        .controller('LandingCtrl', LandingCtrl);
+        .controller('LandingCtrl', ["$scope", "Timer", LandingCtrl]);
 })();
