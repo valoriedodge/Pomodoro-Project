@@ -10,6 +10,10 @@
           Timer.onBreak = false;
           Timer.paused = false;
 
+          var mySound = new buzz.sound( "/assets/sounds/Ding.mp3", {
+            preload: true
+          });
+
           /**
           * @desc Current time (in seconds) of current countdown
           * @type {Number}
@@ -32,6 +36,7 @@
                 count += 1;
                $rootScope.currentTime = $rootScope.currentTime - 60;
                if (count >=25){
+                 mySound.play();
                  if (workSessions >= 4){
                    $rootScope.currentTime = THIRTY;
                  } else {
@@ -78,6 +83,7 @@
                   count +=1;
                   $rootScope.currentTime = $rootScope.currentTime - 60;
                   if (count >= 30){
+                   mySound.play();
                    $rootScope.currentTime = TWENTY_FIVE;
                    workSessions = 0;
                    Timer.onBreak = false;
@@ -90,6 +96,7 @@
                   count +=1;
                   $rootScope.currentTime = $rootScope.currentTime - 60;
                   if (count >= 5){
+                   mySound.play();
                    $rootScope.currentTime = TWENTY_FIVE;
                    Timer.onBreak = false;
                    Timer.stopped = true;
