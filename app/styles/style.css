@@ -32,3 +32,15 @@ body {
 .main {
   margin-top: 300px;
 }
+.tasks {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  font-family: fantasy;
+  color: #990000;
+  font-size: 15px;
+  font-style: bold;
+}
+table {
+  text-align: left;
+}
