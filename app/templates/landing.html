@@ -6,3 +6,19 @@
 <button class="button" ng-click="landing.timer.startBreak()" ng-show="landing.timer.paused">Start Break</button>
 <button class="button" ng-click="landing.timer.resetBreak()" ng-show="landing.timer.onBreak">Reset Break</button>
 </div>
+<div class="tasks">
+  <ol>
+    <li ng-repeat="task in landing.tasks.list">
+      <!-- edit a task -->
+      <!-- <input ng-model="task.text" ng-change="landing.tasks.$save(task)" /> -->
+      {{task.text}}
+      <!-- delete a task -->
+      <button ng-click="landing.tasks.list.$remove(task)">Delete Task</button>
+    </li>
+  </ol>
+    <!-- push a new task onto the array -->
+    <form ng-submit="landing.tasks.addItem()">
+      <input type="text" ng-model="landing.tasks.newMessageText" placeholder="Add A Task"/>
+      <button type="submit">Add Task</button>
+    </form>
+</div>
