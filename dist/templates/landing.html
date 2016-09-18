@@ -1,3 +1,4 @@
+<div class="back">
 <div class="main">
 <p>{{landing.heroTitle}}</p>
 <p class="time">{{ currentTime | timecode}}</p>
@@ -6,10 +7,11 @@
 <button class="button" ng-click="landing.timer.startBreak()" ng-show="landing.timer.paused">Start Break</button>
 <button class="button" ng-click="landing.timer.resetBreak()" ng-show="landing.timer.onBreak">Reset Break</button>
 </div>
+</div>
 <div class="tasks">
   <h2>To Do List</h2>
   <table>
-    <tr ng-repeat="task in landing.tasks.list">
+    <tr ng-repeat="task in landing.tasks.list | orderBy : '-date'">
       <!-- edit a task -->
       <!-- <input ng-model="task.text" ng-change="landing.tasks.$save(task)" /> -->
       <td>{{task.text}}</td>

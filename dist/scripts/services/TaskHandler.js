@@ -4,9 +4,13 @@
     var ref = firebase.database().ref().child("tasks");
     tasks.list = $firebaseArray(ref);
     // tasks.newMessageText = "Add a Task";
+
     tasks.addItem = function(){
+      var date = new Date();
+      var time = date.getTime();
       tasks.list.$add({
-        text: tasks.newMessageText
+        text: tasks.newMessageText,
+        date: time
       });
       tasks.newMessageText = null;
     };
