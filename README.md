@@ -2,9 +2,8 @@
 
 ##An Application to Help Improve Productivity
 
-<p align="center">
-  <img src="assets/images/PomodoroProjectSmall.png" alt="Pomodoro Project">
-</p>
+
+[Pomodoro Project](assets/images/PomodoroProjectSmall.png)
 
 The Pomodoro Project is an application that contains a countdown timer that helps you encapsulate your work/study sessions to help you focus on the task at hand followed by a break session in order to sharpen your senses and improve productivity. The work sessions are set to be 25 minutes while the break sessions are set to be 5 minutes, except every fourth break, which is set to be a 30 minute break.
 
