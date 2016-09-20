@@ -1,6 +1,6 @@
 .back {
   position: absolute;
-  left: 50px;
+  left: 10%;
   min-height: 600px;
   vertical-align: middle;
   width: 100%;
@@ -45,6 +45,7 @@
   color: #990000;
   font-size: 15px;
   font-style: bold;
+  max-width: 20%;
 }
 table {
   text-align: left;

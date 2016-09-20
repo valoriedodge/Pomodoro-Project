@@ -14,10 +14,6 @@
             preload: true
           });
 
-          // var _minutes = function(value){
-          //   return value * 60;
-          // }
-
           /**
           * @desc Current time (in seconds) of current countdown
           * @type {Number}
@@ -131,11 +127,6 @@
                  }
                }
              };
-
-            // $scope.$on('$destroy', function() {
-            //   // Make sure that the interval is destroyed too
-            //   timer.stopStudy();
-            // });
 
           return timer;
      }

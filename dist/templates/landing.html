@@ -10,6 +10,11 @@
 </div>
 <div class="tasks">
   <h2>To Do List</h2>
+  <form ng-submit="landing.tasks.addItem()">
+    <input type="text" ng-model="landing.tasks.newMessageText" placeholder="Add A Task"/>
+    <button type="submit">Add Task</button>
+  </form>
+  </br>
   <table>
     <tr ng-repeat="task in landing.tasks.list | orderBy : '-date'">
       <!-- edit a task -->
@@ -19,9 +24,5 @@
       <td><button ng-click="landing.tasks.list.$remove(task)">Done</button></td>
     </tr>
   </table>
-    <!-- push a new task onto the array -->
-    <form ng-submit="landing.tasks.addItem()">
-      <input type="text" ng-model="landing.tasks.newMessageText" placeholder="Add A Task"/>
-      <button type="submit">Add Task</button>
-    </form>
+
 </div>
