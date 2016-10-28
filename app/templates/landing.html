@@ -1,12 +1,12 @@
 <div class="back">
-<div class="main">
-<p>{{landing.heroTitle}}</p>
-<p class="time">{{ currentTime | timecode}}</p>
-<button class="button" ng-click="landing.timer.startStudy()" ng-show="landing.timer.stopped">Start Study</button>
-<button class="button" ng-click="landing.timer.resetStudy()" ng-show="landing.timer.timing">Reset Study</button>
-<button class="button" ng-click="landing.timer.startBreak()" ng-show="landing.timer.paused">Start Break</button>
-<button class="button" ng-click="landing.timer.resetBreak()" ng-show="landing.timer.onBreak">Reset Break</button>
-</div>
+  <div class="main">
+    <p>{{landing.heroTitle}}</p>
+    <p class="time">{{ currentTime | timecode}}</p>
+    <button class="button" ng-click="landing.timer.startStudy()" ng-show="landing.timer.stopped">Start Study</button>
+    <button class="button" ng-click="landing.timer.resetStudy()" ng-show="landing.timer.timing">Reset Study</button>
+    <button class="button" ng-click="landing.timer.startBreak()" ng-show="landing.timer.paused">Start Break</button>
+    <button class="button" ng-click="landing.timer.resetBreak()" ng-show="landing.timer.onBreak">Reset Break</button>
+  </div>
 </div>
 <div class="tasks">
   <h2>To Do List</h2>

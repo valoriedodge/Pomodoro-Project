@@ -5,7 +5,7 @@
 
 ![Pomodoro Project](app/assets/images/PomodoroProjectSmall.png)
 
-The Pomodoro Project is an application that contains a countdown timer that helps you encapsulate your work/study sessions to help you focus on the task at hand followed by a break session in order to sharpen your senses and improve productivity. The work sessions are set to be 25 minutes while the break sessions are set to be 5 minutes, except every fourth break, which is set to be a 30 minute break.
+The Pomodoro Project is an application modeled after the [Pomodoro Technique](http://pomodorotechnique.com/) aimed to increase your work productivity and quality. The application contains a countdown timer set to 25 minutes that helps you encapsulate your work/study sessions to help you focus on the task at hand followed by a 5 minute break session to help you sharpen your senses and improve overall productivity. This pattern of 25 minute work sessions followed by 5 minute breaks continues with the exception that every fourth break is set to be a 30 minute break.
 
 Also to facilitate and enhance your focus is the ability to create a to-do list on the web application interface. This list is saved to Firebase and will need to be configured with your own credentials in the index.html and saved in a script tag:
 
